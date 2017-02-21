@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/reset.css" type="text/css">	 -->
+	<link rel="stylesheet" type ="text/css" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<title>Baciplus - Vacunas</title>
+	<header class="miHeader">
+		<nav class="Menu">
+			<ul class="Menu-list">
+				<li class="MenuLink"><a href="index.html">Inicio</a></li>
+				<li class="MenuLink"><a href="Cultivos.html">Cultivos</a></li>
+				<li class="MenuLink"><a href="Informes.html">Informes</a></li>
+				<li class="MenuLink"><a href="Muestras.html">Muestras</a></li>
+				<li class="MenuLink"><a href="Ordenes.html">Ordenes</a></li>
+				<li class="MenuLink"><a href="Pacientes.html">Pacientes</a></li>
+				<li class="MenuLink"><a href="Turnos.html">Turnos</a></li>				
+				<li class="MenuLink"><a href="Vacunas.html">Vacunas</a></li>
+				<!-- <a href="" class="btn">Entrar</a> -->
+			</ul>
+		</nav>
+	</header>
+</head>
+<body>
+	<section class="Formulario">
+		<h3 class="FormTitulo">Vacunas</h3>
+		<form class="ContentForm2" method="POST" id="FormVacunas" name="FormVacunas">
+			<div class="FormItem">
+				<label class="Form-etiqueta">Nº de Ficha:</label>
+				<input type="text" class="Form-caja" name="numeroficha" id="numeroficha">
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">BCG:</label>
+				<select class="Form-select" name="bcg" id="bcg">
+					<option value="1ra Dosis">1ra Dosis</option>
+					<option value="2da Dosis">2da Dosis</option>
+					<option value="3ra Dosis">3ra Dosis</option>
+					<option value="Dosis Completa">Dosis Completa</option>				
+				</select>
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Cuadruple:</label>
+				<select class="Form-select" name="cuadruple" id="cuadruple">
+					<option value="1ra Dosis">1ra Dosis</option>
+					<option value="2da Dosis">2da Dosis</option>
+					<option value="3ra Dosis">3ra Dosis</option>
+					<option value="Dosis Completa">Dosis Completa</option>					
+				</select>
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Triple (DPT):</label>
+				<select class="Form-select" name="tripledpt" id="tripledpt">
+					<option value="1ra Dosis">1ra Dosis</option>
+					<option value="2da Dosis">2da Dosis</option>
+					<option value="3ra Dosis">3ra Dosis</option>
+					<option value="Dosis Completa">Dosis Completa</option>				
+				</select>
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Sabin:</label>
+				<select class="Form-select" name="sabin" id="sabin">
+					<option value="1ra Dosis">1ra Dosis</option>
+					<option value="2da Dosis">2da Dosis</option>
+					<option value="3ra Dosis">3ra Dosis</option>
+					<option value="Dosis Completa">Dosis Completa</option>					
+				</select>
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Triple Viral:</label>
+				<select class="Form-select" name="tripleviral" id="tripleviral">
+					<option value="1ra Dosis">1ra Dosis</option>
+					<option value="2da Dosis">2da Dosis</option>
+					<option value="3ra Dosis">3ra Dosis</option>
+					<option value="Dosis Completa">Dosis Completa</option>				
+				</select>
+			</div>
+			<section class="Botones">
+				<input type="button" class="btn-guardar" value="Insertar" id="guardarvacunas"/>
+				<input type="button" class="btn-modificar" value="Modificar"  id="modificarvacunas"/>
+				<input type="button" class="btn-eliminar" value="Eliminar" id="eliminarvacunas"/>
+			</section>
+		</form>
+		<div class="Lista">
+			<div class="Lista-aviso">
+				<p>Versión Demo. Contactame a <a href="http://www.twitter.com/EnzoDarling" target="_blank">@EnzoDarling</a> para más información sobre el sitio.</p>
+			</div>
+			<input type="search" name="cult_buscar" class="Lista-buscador" placeholder="Ingrese el Nº de Vacuna" id="vac_buscar">		
+			<div id="Vacunas-datos">
+				
+			</div>
+		</div>
+	</section>	
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/vacunas.js"></script>
+</body>
+</html>

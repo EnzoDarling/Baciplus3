@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/reset.css" type="text/css">	 -->
+	<link rel="stylesheet" type ="text/css" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<title>Baciplus - Turnos</title>
+	<header class="miHeader">
+		<nav class="Menu">
+			<ul class="Menu-list">
+				<li class="MenuLink"><a href="index.html">Inicio</a></li>
+				<li class="MenuLink"><a href="Cultivos.html">Cultivos</a></li>
+				<li class="MenuLink"><a href="Informes.html">Informes</a></li>
+				<li class="MenuLink"><a href="Muestras.html">Muestras</a></li>
+				<li class="MenuLink"><a href="Ordenes.html">Ordenes</a></li>
+				<li class="MenuLink"><a href="Pacientes.html">Pacientes</a></li>
+				<li class="MenuLink"><a href="Turnos.html">Turnos</a></li>
+				<li class="MenuLink"><a href="Vacunas.html">Vacunas</a></li>				
+			</ul>
+		</nav>
+	</header>
+</head>
+<body>
+	<section class="Formulario">
+		<h3 class="FormTitulo">Turnos</h3>
+		<form class="ContentForm2" action="turnos.php" method="POST" id="FormTurnos">
+			<div class="FormItem">
+				<label class="Form-etiqueta">ID Turno:</label>
+				<input type="text" class="Form-caja" name="id_turno" id="id_turno">
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Apellido:</label>
+				<input type="text" class="Form-caja" name="apellido" id="apellido">
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Nombre:</label>
+				<input type="text" class="Form-caja" name="nombre" id="nombre">
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Fecha:</label>
+				<input type="date" class="Form-caja" name="fecha" id="fecha">
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Hora:</label>
+				<input type="time" class="Form-caja" name="hora" id="hora">
+			</div>
+			<section class="Botones">
+				<input type="button" class="btn-guardar" value="Insertar" id="guardarturnos"/>
+				<input type="button" class="btn-modificar" value="Modificar"  id="modificarturnos"/>
+				<input type="button" class="btn-eliminar" value="Eliminar" id="eliminarturnos"/>
+			</section>
+		</form>
+		<div class="Lista">
+			<div class="Lista-aviso">
+				<p>Versión Demo. Contactame a <a href="http://www.twitter.com/EnzoDarling" target="_blank">@EnzoDarling</a> para más información sobre el sitio.</p>
+			</div>
+			<input type="search" name="cult_buscar" class="Lista-buscador" placeholder="Ingrese el Apellido" id="turn_buscar">		
+			<div id="Turnos-datos">
+				
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>	
+</body>
+</html>

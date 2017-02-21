@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/reset.css" type="text/css"> -->
+	<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<title>Baciplus - Cultivos</title>
+	<header class="miHeader">
+		<nav class="Menu">
+			<ul class="Menu-list">
+				<li class="MenuLink"><a href="index.html">Inicio</a></li>
+				<li class="MenuLink"><a href="Cultivos.html">Cultivos</a></li>
+				<li class="MenuLink"><a href="Informes.html">Informes</a></li>
+				<li class="MenuLink"><a href="Muestras.html">Muestras</a></li>
+				<li class="MenuLink"><a href="Ordenes.html">Ordenes</a></li>
+				<li class="MenuLink"><a href="Pacientes.html">Pacientes</a></li>
+				<li class="MenuLink"><a href="Turnos.html">Turnos</a></li>
+				<li class="MenuLink"><a href="Vacunas.html">Vacunas</a></li>
+				<!-- <a href="" class="btn">Entrar</a> -->
+			</ul>
+		</nav>
+	</header>
+</head>
+<body>
+<section class="Formulario">
+	<h3 class="FormTitulo">Cultivos</h3>
+	<!-- action="cultivos.php" -->
+	<form class="ContentForm" method="post" id="FormCultivos">
+		<div class="FormItem">
+			<label class="Form-etiqueta">Num. Cultivo:</label>
+			<input type="text" class="Form-caja" name="num_cultivo" id="num_cultivo">
+		</div>
+		<div class="FormItem">
+			<label class="Form-etiqueta">Fecha Primera Lectura:</label>
+			<input type="text" class="Form-caja" name="fecha_primera_lectura" id="fecha_primera_lectura">
+		</div>
+		<div class="FormItem">
+			<label class="Form-etiqueta">Primera Lectura:</label>
+			<!-- <input type="text" class="Form-caja" name="primera_lectura" id="primera_lectura"> -->
+			<select class="Form-select" name="primera_lectura" id="primera_lectura">
+				<option value="Seleccione">Seleccione</option>
+				<option value="Positivo">Positivo</option>
+				<option value="Negativo">Negativo</option>
+			</select>
+		</div>
+		<div class="FormItem">
+			<label class="Form-etiqueta">Fecha Segunda Lectura:</label>
+			<input type="text" class="Form-caja" name="fecha_segunda_lectura" id="fecha_segunda_lectura">
+		</div>
+		<div class="FormItem">
+			<label class="Form-etiqueta">Segunda Lectura:</label>
+			<!-- <input type="text" class="Form-caja" name="segunda_lectura" id="segunda_lectura"> -->
+			<select class="Form-select" name="segunda_lectura" id="segunda_lectura">
+				<option value="Seleccione">Seleccione</option>
+				<option value="Positivo">Positivo</option>
+				<option value="Negativo">Negativo</option>
+			</select>
+		</div>
+		<div class="FormItem">
+			<label class="Form-etiqueta">Resultado:</label>
+			<!-- <input type="text" class="Form-caja" name="resultado" id="resultado"> -->
+			<select class="Form-select" name="resultado" id="resultado">
+				<option value="Seleccione">Seleccione</option>
+				<option value="Positivo">Positivo</option>
+				<option value="Negativo">Negativo</option>
+				<option value="En Tratamiento">En Tratamiento</option>
+			</select>
+		</div>
+		<div class="FormItem">
+			<label class="Form-etiqueta">Num. Muestra:</label>
+			<input type="text" class="Form-caja" name="num_muestra" id="num_muestra">
+		</div>
+		<div class="FormItem">
+			<label class="Form-etiqueta">Solicitud de Cultivo:</label>
+			<select class="Form-select" name="sol_cultivo" id="sol_cultivo">
+				<option value="Seleccione">Seleccione</option>
+				<option value="si">SI</option>
+				<option value="no">NO</option>
+			</select>
+		</div>
+		<section class="Botones">
+				<input type="button" class="btn-guardar" value="Insertar" id="guardarcultivos"/>
+				<input type="button" class="btn-modificar" value="Modificar"  id="modificarcultivos"/>
+				<input type="button" class="btn-eliminar" value="Eliminar" id="eliminarcultivos"/>
+				<!-- <input type="button" class="btn-nuevo" id="listar-cultivos"  value="Listar"/> -->
+		</section>
+	</form>
+	<div class="Lista">
+		<div class="Lista-aviso">
+			<p>Versión Demo. Contactame a <a href="http://www.twitter.com/EnzoDarling" target="_blank">@EnzoDarling</a> para más información sobre el sitio.</p>
+		</div>
+		<input type="search" name="cult_buscar" class="Lista-buscador" placeholder="Ingrese el Nº de Cultivo" id="cult_buscar">
+		<div id="Cultivos-datos">
+
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</body>
+</html>
